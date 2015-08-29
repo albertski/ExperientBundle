@@ -1,0 +1,12 @@
+parameters:
+  username:
+  password:
+  showcode:
+  accountDomain:
+  wsdl:
+  namespace:
+
+services:
+  experient:
+    class: ExperientBundle\Services\Experient
+    arguments: [%experient.username%, %experient.password%, %experient.showcode%, %experient.accountDomain%, %experient.wsdl%, %experient.namespace%]

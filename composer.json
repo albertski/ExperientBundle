@@ -1,0 +1,16 @@
+{
+    "name": "albertski/experient-bundle",
+    "description": "A Symfony2 bundle for using the Experient API",
+    "type": "symfony-bundle",
+    "keywords":    ["experient", "symfony", "bundle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Albert Jankowski",
+            "email": "albertski84@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Albertski\\ExperientBundle": "" }
+    },
+}
