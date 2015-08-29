@@ -11,6 +11,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Albertski\\": "" }
-    }
+        "psr-0": { "Albertski\\ExperientBundle": "" }
+    },
+    "target-dir": "Albertski/ExperientBundle"
 }
