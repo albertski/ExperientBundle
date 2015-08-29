@@ -10,6 +10,8 @@
             "email": "albertski84@yahoo.com"
         }
     ],
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
     "autoload": {
         "psr-0": { "Albertski\\ExperientBundle": "" }
     }
