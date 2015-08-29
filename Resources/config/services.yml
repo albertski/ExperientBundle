@@ -8,5 +8,5 @@ parameters:
 
 services:
   experient:
-    class: ExperientBundle\Services\Experient
+    class: Albertski\ExperientBundle\Services\Experient
     arguments: [%experient.username%, %experient.password%, %experient.showcode%, %experient.accountDomain%, %experient.wsdl%, %experient.namespace%]

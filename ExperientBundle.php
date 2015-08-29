@@ -1,6 +1,6 @@
 <?php
 
-namespace ExperientBundle;
+namespace Albertski\ExperientBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

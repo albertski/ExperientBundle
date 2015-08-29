@@ -1,6 +1,6 @@
 <?php
 
-namespace ExperientBundle\DependencyInjection;
+namespace Albertski\ExperientBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

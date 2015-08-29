@@ -1,16 +1,11 @@
 <?php
 
-namespace ExperientBundle\Services;
-
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Loader;
-use Symfony\Component\Config\FileLocator;
+namespace Albertski\ExperientBundle\Services;
 
 /**
  * Handles Experient SOAP API calls.
  */
-class Experient extends Extension
+class Experient
 {
 
   /**
