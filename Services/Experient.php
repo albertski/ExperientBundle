@@ -1,6 +1,6 @@
 <?php
 
-namespace Albertski\ExperientBundle\Services;
+namespace ExperientBundle\Services;
 
 /**
  * Handles Experient SOAP API calls.
