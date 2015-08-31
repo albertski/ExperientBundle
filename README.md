@@ -36,7 +36,7 @@ Edit `app/config/config.yml`.
       wsdl: %experient.wsdl%
       namespace: %experient.namespace%
 
-Edit parameters.yml. Add paramaters and add the parameter values.
+Edit parameters.yml. Add parameters and add the parameter values.
 
     parameters:
         .....
