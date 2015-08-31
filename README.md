@@ -10,7 +10,7 @@ Get the bundle with composer by running this command at the root of your symfony
     composer require albertski/experient-bundle
 
 
-# Enable the module
+# Enable the bundle
 
 To start using the bundle, register the bundle in your application's kernel class:
 
@@ -19,7 +19,7 @@ To start using the bundle, register the bundle in your application's kernel clas
     {
         $bundles = array(
             // ...
-            new Albertski\ExperientBundle\ExperientBundle(),
+            new ExperientBundle\ExperientBundle(),
             // ...
         );
     }
