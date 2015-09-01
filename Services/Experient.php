@@ -270,6 +270,20 @@ class Experient
   }
 
   /**
+   * Return a string of XML-formatted DemographicsLookupList elements depicting
+   * the Demographic Codes and all Freeform demographics for a show.
+   *
+   * @return string response
+   *   XML Response.
+   */
+  public function PullDemographicsLookupListWithFreeform()
+  {
+    $response = $this->client->PullDemographicsLookupListWithFreeform();
+
+    return $this->getResult($response, 'PullDemographicsLookupListWithFreeformResult');
+  }
+
+  /**
    * Get result from soap api response.
    *
    * @param object $response
