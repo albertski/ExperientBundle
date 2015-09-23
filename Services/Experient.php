@@ -272,6 +272,25 @@ class Experient
   }
 
   /**
+   * Called to end a Paged DataExport. Removes references to the Token for the
+   * search.
+   *
+   * @param string $pageToken
+   *
+   * @return string response
+   *   XML Response.
+   */
+  public function finalizePagedPull($pageToken)
+  {
+    $requestParameters = (object) array(
+      'pageToken' => $pageToken,
+    );
+    $response = $this->client->FinalizePagedPull($requestParameters);
+
+    return $this->getResult($response, 'FinalizePagedPullResult');
+  }
+
+  /**
    * Get result from soap api response.
    *
    * @param object $response
