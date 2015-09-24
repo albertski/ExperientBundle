@@ -36,7 +36,7 @@ class Experient
    * @var integer
    *   Page size (limit is 500).
    */
-  private $pagedResultsPageSize = 50;
+  private $pagedResultsPageSize = 500;
 
   /**
    * @var string
@@ -102,9 +102,16 @@ class Experient
    */
   public function setClient($trace = 1, $exceptions = 1)
   {
+    // Some servers close connection after some time. The only way to do this
+    // currently is to use a stream_context with 1.0 HTTP protocol version.
+    $socket_context = stream_context_create(
+      array('http' => array('protocol_version'  => 1.0))
+    );
+
     $this->client = new \SoapClient($this->wsdl, array(
-      "trace" => $trace,
-      "exceptions" => $exceptions,
+      'trace' => $trace,
+      'exceptions' => $exceptions,
+      'stream_context' => $socket_context,
     ));
   }
 
